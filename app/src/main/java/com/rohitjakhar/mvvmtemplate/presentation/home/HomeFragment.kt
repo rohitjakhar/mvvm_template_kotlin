@@ -14,7 +14,7 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private val viewModel by viewModels<HomeViewModel>()
-    
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

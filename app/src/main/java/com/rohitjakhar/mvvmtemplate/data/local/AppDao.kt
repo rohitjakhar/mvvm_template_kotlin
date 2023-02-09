@@ -2,7 +2,7 @@ package com.rohitjakhar.mvvmtemplate.data.local
 
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy.REPLACE
+import androidx.room.OnConflictStrategy.Companion.REPLACE
 import com.rohitjakhar.mvvmtemplate.data.local.model.DataModel
 
 @Dao

@@ -4,6 +4,10 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
 }
 
 android {
@@ -66,11 +70,29 @@ dependencies {
     // Image Loading
     implementation "io.coil-kt:coil:2.2.2"
 
+    // Lotie image
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
     // Coroutine and Lifecycle
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+
+    // firebase bom
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation('com.google.firebase:firebase-auth-ktx')
+    implementation('com.google.firebase:firebase-crashlytics-ktx')
+    implementation('com.google.firebase:firebase-analytics-ktx')
+    implementation('com.google.firebase:firebase-messaging-ktx')
+    implementation('com.google.firebase:firebase-messaging-ktx')
+    implementation('com.google.firebase:firebase-perf-ktx')
+    implementation ('com.google.firebase:firebase-config-ktx')
+    implementation('com.google.firebase:firebase-firestore-ktx')
+
+    implementation 'com.google.android.play:app-update-ktx:2.0.1'
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
 
     // datastore
     implementation "androidx.datastore:datastore-preferences:1.0.0"

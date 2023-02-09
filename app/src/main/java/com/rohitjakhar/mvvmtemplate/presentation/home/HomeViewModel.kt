@@ -10,11 +10,11 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val dataRepo: DataRepo
+
 ) : ViewModel() {
     fun getData() {
         viewModelScope.launch(IO) {
-            dataRepo.getData()
+
         }
     }
 }
